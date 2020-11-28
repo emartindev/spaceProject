@@ -8,21 +8,25 @@
     <title>Space news!</title>
 </head>
 <body>
-
+    <!-- Navigation Bar. Can select what type of News you want to see -->
+    <div class="myNavbar abs">
+        <nav class="navbar navbar-light bg-dark">
+            <form class="form-inline">
+                <button class="btn btn-outline-light" type="button">Articles</button>
+                <button class="btn btn-outline-light" type="button">Blogs</button>
+                <button class="btn btn-outline-light" type="button">Reports</button>
+            </form>
+        </nav>
+    </div>
+        
         <div class="container-fluid">
         <div class="wrapper">
 
-            <div class="row justify-content-md-center">
-                <div class="col-lg-2">
-                    Articles:
-                </div>
-                <div class="col-lg-2">
-                    Blogs:
-                </div>
-                <div class="col-lg-2">
-                    Reports:
-                </div>
+            <div class="row justify-content-md-center newsData">
+                <!-- Dynamic content goes here: -->
             </div>
+
+            
 
 
         </div>
