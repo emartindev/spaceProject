@@ -1,39 +1,41 @@
 const app = {};
 
 
-// app.getNewsArticles = function () {
-//   $.ajax({
-//     url: "https://spaceflightnewsapi.net/api/v2/articles",
-//     method: "GET",
-//     feedtype: "JSON",
+app.getNewsArticles = function () {
+  $.ajax({
+    url: "https://spaceflightnewsapi.net/api/v2/articles",
+    method: "GET",
+    feedtype: "JSON",
 
-//   })
-//   .then(function(result) {
-//     // this is calling the data above and PASSING down to the below function
-//     $('.article-container').empty();
-//     app.getArticles(result);
-//     console.log(result);
-//   })
-//   .fail(function(error){
-//     console.log(error);
-//   })
-// };
+  })
+  .then(function(result) {
+    $('.article-button').one('click', function(){
+    // this is calling the data above and PASSING down to the below function
+    $('.article-container').empty();
+    app.getArticles(result);
+    console.log(result);
+    })
+  })
+  .fail(function(error){
+    console.log(error);
+  })
+};
 
-// app.getArticles = function(articleData){
-//   articleData.forEach(function(article){
-//     // console.log(article.title);
-//     const appendToHtml = `
-//         <div class=" col-lg-3 article-container">
-//           <h3>${article.title}</h3>
-//             <div>
-//               <img class="article-image" src=${article.imageUrl} />
-//             </div>
-//           <div class"article-description">${article.summary}</div
-//         </div>
-//     `;
-//     $(".newsData").append(appendToHtml);
-//   })
-// }
+app.getArticles = function(articleData){
+  articleData.forEach(function(article){
+    // console.log(article.title);
+    const appendToHtml = `
+        <div class=" col-lg-3 article-container">
+          <h3>${article.title}</h3>
+            <div>
+              <img class="article-image" src=${article.imageUrl} />
+            </div>
+          <div class"article-description">${article.summary}</div
+        </div>
+    `;
+    $(".newsData").append(appendToHtml);
+  })
+}
 
 
 
@@ -47,14 +49,16 @@ app.getNewsReports = function () {
     feedtype: "JSON",
   })
     .then(function (result) {
+      $('.report-button').one('click', function(){
       // this is calling the data above and PASSING down to the below function
-      $(".reports-container").empty();
-      app.getreports(result);
+      $('.article-container').empty();
+      app.getArticles(result);
       console.log(result);
+      })
     })
-    .fail(function (error) {
+    .fail(function(error){
       console.log(error);
-    });
+    })
 };
 
 
@@ -111,7 +115,7 @@ app.getreports = function (reportsData) {
 
 
 app.init = function(){
-  // app.getNewsArticles();
+  app.getNewsArticles();
   app.getNewsReports();
   // app.getNewsReports();
 }
