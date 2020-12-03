@@ -1,9 +1,10 @@
 .container-fluid, body{
-    background-color: #607D8B;
+    background-image: linear-gradient(to right top, #ff9671, #e57b89, #7d6592, #4b597a, #2f4858);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
 
 .wrapper {
     height: 100%;
@@ -14,23 +15,21 @@
     color: white;
 }
 
-.myNavbar{
-    margin: 0 auto;
-}
 
-.article-container{
-    background-color: #cfd8dc;
+.news-container{
+    background-color: rgba(255, 255, 255, 0.507);
     height: auto;
     border: 1px solid rgba(0, 0, 0, 0.137);
-    border-radius: 30px;
+    border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-    padding: 50px;
+    padding: 40px;
     margin: 20px 20px;
+    display: flexbox;
 }
 
-.article-image{
+.news-image{
     width: 100%;
     display: block;
     position: relative;
-    margin: 0 auto;
+    margin: 20px 0px 20px 0px;
 }
