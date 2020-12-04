@@ -5,7 +5,6 @@
     background-attachment: fixed;
 }
 
-
 .wrapper {
     height: 100%;
 }
@@ -15,14 +14,13 @@
     color: white;
 }
 
-
 .news-container{
     background-color: rgba(255, 255, 255, 0.507);
     height: auto;
     border: 1px solid rgba(0, 0, 0, 0.137);
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-    padding: 40px;
+    padding: 20px;
     margin: 20px 20px;
     display: flexbox;
 }
@@ -32,4 +30,8 @@
     display: block;
     position: relative;
     margin: 20px 0px 20px 0px;
+}
+
+.aotp-image{
+    width: 100%;
 }
