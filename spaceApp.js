@@ -39,7 +39,8 @@ app.aotpPics = function () {
 // Getting the news articles url
 app.getNewsArticles = function () {
   $.ajax({
-    url: "https://spaceflightnewsapi.net/api/v2/articles",
+    
+    url: "https://api.spaceflightnewsapi.net/v3/articles",
     method: "GET",
     feedtype: "JSON",
   })
