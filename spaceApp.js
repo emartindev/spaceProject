@@ -78,7 +78,7 @@ app.getArticles = function (articleData) {
 // Getting the iss reports url
 app.getNewsReports = function () {
   $.ajax({
-    url: "https://spaceflightnewsapi.net/api/v2/reports",
+    url: "https://api.spaceflightnewsapi.net/v3/reports",
     method: "GET",
     feedtype: "JSON",
   })
