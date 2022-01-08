@@ -1,3 +1,4 @@
+// import particlesJS from './particles.js'
 const app = {};
 
 // Converting date into the required format YYYY-MM-DD
@@ -116,11 +117,20 @@ app.getReports = function (reportData) {
 };
 
 
+app.particles = () => {
+  /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+  particlesJS.load('particles-js', './particlesjs-config.json', function() {
+    console.log('callback - particles.js config loaded');
+  });
+}
+
+
 
 app.init = function () {
   app.getNewsArticles();
   app.getNewsReports();
   app.aotpPics();
+  app.particles();
 
 };
 

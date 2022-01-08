@@ -1,0 +1,23 @@
+{
+  "type": "module",
+  "name": "spaceproject",
+  "version": "1.0.0",
+  "description": "Originally a project for Juno College bootcamp (JS)",
+  "main": "spaceApp.js",
+  "dependencies": {
+    "particles.js": "^2.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emartindev/spaceProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emartindev/spaceProject/issues"
+  },
+  "homepage": "https://github.com/emartindev/spaceProject#readme"
+}

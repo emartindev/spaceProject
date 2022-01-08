@@ -1,12 +1,37 @@
 .container-fluid, body{
-    background-image: linear-gradient(to right top, #ff9671, #e57b89, #7d6592, #4b597a, #2f4858);
-    background-size: 100% 100%;
+    background-color: black;
+    height: 100vh;
+    background-size: cover;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    padding-left: 0px!important;
+    padding-right: 0px!important;
 }
 
-.wrapper {
+#particles-js{
+    width: 100%;
     height: 100%;
+    background-color: #072227;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+.wrapper {
+    width: 100%;
+}
+
+.particles-js-canvas-el{
+    width: 100%!important;
+}
+
+.rectangle{
+  /* background: white; */
+  position: absolute;
+  top: 148px;
+  /* width: 80px;
+  height: 80px;; */
+  width: 100%;
 }
 
 .btn{
@@ -15,14 +40,15 @@
 }
 
 .news-container{
-    background-color: rgba(255, 255, 255, 0.507);
+    background-color: #05181b;
     height: auto;
-    border: 1px solid rgba(0, 0, 0, 0.137);
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    border: 2px solid #35858B;
+    border-radius: 5px;
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.5);
     padding: 20px;
     margin: 20px 20px;
-    display: flexbox;
+    color: #AEFEFF;
+    /* display: flexbox; */
 }
 
 .news-image{
@@ -34,4 +60,5 @@
 
 .aotp-image{
     width: 100%;
+    border-radius: 5px;
 }
